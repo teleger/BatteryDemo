@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.github.lzyzsd.circleprogress.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_marginLeft="50dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#FFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/voltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/circle_progress"
+        android:textSize="25sp"
+        android:text="empty"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/voltage_hint"
+        android:hint="Voltage"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/voltage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/chargingSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:text="empty"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/voltage_hint"/>
+
+    <TextView
+        android:id="@+id/chargingSource_hint"
+        android:hint="ChargingSource"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chargingSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/chargingStatus"
+        android:layout_below="@+id/chargingSource_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/chargingStatus_hint"
+        android:hint="ChargingStatus"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chargingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/health"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chargingStatus_hint"/>
+
+    <TextView
+        android:id="@+id/health_hint"
+        android:hint="Health Status"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
